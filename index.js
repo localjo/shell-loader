@@ -11,3 +11,4 @@ module.exports = function(source) {
     command.stdin.write(source);
     command.stdin.end();
 };
+module.exports.raw = true;
