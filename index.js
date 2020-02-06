@@ -1,13 +1,11 @@
 const { exec } = require('child_process');
 const loaderUtils = require('loader-utils');
-const omit = require('lodash.omit');
 
 module.exports = function(source) {
-    const options = loaderUtils.getOptions(this);
+    const { script, ...options } = loaderUtils.getOptions(this);
     const callback = this.async();
-    const scriptOptions = omit(options, 'script');
 
-    const command = exec(options.script, scriptOptions, function(err, result) {
+    const command = exec(script, options, function(err, result) {
         if (err) return callback(err);
         callback(null, result);
     });
