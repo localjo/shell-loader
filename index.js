@@ -4,6 +4,15 @@ const loaderUtils = require('loader-utils');
 module.exports = function(source) {
     const callback = this.async();
     const { script, ...options } = loaderUtils.getOptions(this);
+
+    if (!options.cwd) {
+        options.cwd = this.context;
+    }
+
+    if (options.maxBuffer) {
+        options.maxBuffer = parseInt(options.maxBuffer);
+    }
+
     const command = exec(script, options, function(err, result) {
         if (err) return callback(err);
         callback(null, result);
