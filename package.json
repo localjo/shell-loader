@@ -1,6 +1,6 @@
 {
   "name": "shell-loader",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Webpack loader that runs an arbitrary script on matching files",
   "keywords": [
     "webpack",
