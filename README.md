@@ -1,4 +1,5 @@
 [![NPM Status](https://img.shields.io/npm/v/shell-loader.svg?style=flat)](https://www.npmjs.com/package/shell-loader)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flocaljo%2Fshell-loader.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flocaljo%2Fshell-loader?ref=badge_shield)
 
 <div align="center">
   <a href="https://github.com/webpack/webpack">
@@ -33,3 +34,7 @@ module: {
   ]
 }
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flocaljo%2Fshell-loader.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flocaljo%2Fshell-loader?ref=badge_large)
