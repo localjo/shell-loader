@@ -14,7 +14,10 @@ module.exports = function(source) {
     }
 
     const command = exec(script, options, function(err, result) {
-        if (err) return callback(err);
+        if (err) {
+            throw new Error(err);
+        }
+
         callback(null, result);
     });
     command.stdin.write(source);
