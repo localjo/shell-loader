@@ -22,6 +22,6 @@
   "author": "josiah.sprague@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "loader-utils": "^1.1.0"
+    "loader-utils": "^3.2.1"
   }
 }
